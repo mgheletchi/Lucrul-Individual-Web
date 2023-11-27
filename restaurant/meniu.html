@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>restaurant</title>
+    <script src="menu.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <section class="navbar">
+        <div class="logo"><a href="index.html">BurgerMania</a></div>
+        <div class="burger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Acasa</a></li>
+            <li><a href="meniu.html">Meniu</a></li>
+            <li><a href="rezervare.html">Rezervarea</a></li>
+        </ul>
+    </section>
+</nav>
+<div class="main">
+    <ul class="cards">
+        <!-- Cardul 1 cu fereastra modala -->
+        <li class="cards_item">
+            <div class="card" onclick="openModal(event, 'modal1')">
+                <div class="card_image">
+                    <img src="img/f1.png" alt="mixed vegetable salad in a mason jar."/>
+                    <span class="card_price"><span>lei</span>50</span>
+                </div>
+                <div class="card_content">
+                    <h2 class="card_title">Hawai Pizza</h2>
+                    <div class="card_text">
+                        <p>"Hawaiian Pizza" sau "Pizza Hawaiiană" este o pizza care conține ingrediente precum
+                            șuncă și ananas. Aceasta este o combinație de arome dulci și sărate, care poate fi
+                            surprinzătoare pentru unii și preferată de alții.
+                        </p>
+                        <hr/>
+                        <p><strong>550gr</strong> <strong> 450kcal</strong></p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <!-- Fereastra modală corespunzătoare pentru cardul 1 -->
+        <div id="modal1" class="modal hide" onclick="closeModal(event, 'modal1')">
+            <div class="modal-content" onclick="event.stopPropagation();">
+                <span class="close-btn" onclick="closeModal('modal1')">&times;</span>
+                <img src="img/f1.png" alt="mixed vegetable salad in a mason jar."/>
+                <h2>Detalii Pizza</h2>
+                <p>"Hawaiian Pizza" sau "Pizza Hawaiiană" este o pizza care conține ingrediente precum
+                    șuncă și ananas. Aceasta este o combinație de arome dulci și sărate, care poate fi
+                    surprinzătoare pentru unii și preferată de alții.
+                </p>
+
+            </div>
+        </div>
+
+        <!-- Cardul 2 cu fereastra modala -->
+        <li class="cards_item">
+            <div class="card" onclick="openModal(event, 'modal2')">
+                <div class="card_image">
+                    <img src="img/f2.png" alt="mixed vegetable salad in a mason jar."/>
+                    <span class="card_price"><span>lei</span>59</span>
+                </div>
+                <div class="card_content">
+                    <h2 class="card_title">Grill Burger</h2>
+                    <div class="card_text">
+                        <p>Grill Burger este o delicioasă mâncare care implică gătirea chiftelelor de burger pe grătar
+                            sau plită. Este o opțiune populară pentru cei care apreciază gustul cărnii fragede și
+                            suculente, fiind pregătită în mod tradițional prin gătirea unei chiftele de carne pe grătar,
+                            plită sau într-o tigaie.
+                        </p>
+                        <hr/>
+                        <p><strong>450gr</strong> <strong> 500kcal</strong></p>
+                    </div>
+                </div>
+            </div>
+        </li>
+
+        <!-- Fereastra modală corespunzătoare pentru cardul 2 -->
+        <div id="modal2" class="modal hide" onclick="closeModal(event, 'modal2')">
+            <div class="modal-content" onclick="event.stopPropagation();">
+                <span class="close-btn" onclick="closeModal( 'modal2')">&times;</span>
+                <img src="img/f2.png" alt="mixed vegetable salad in a mason jar."/>
+                <h2>Detalii Grill Burger</h2>
+                <p>Grill Burger este o delicioasă mâncare care implică gătirea chiftelelor de burger pe grătar
+                    sau plită. Este o opțiune populară pentru cei care apreciază gustul cărnii fragede și
+                    suculente, fiind pregătită în mod tradițional prin gătirea unei chiftele de carne pe grătar,
+                    plită sau într-o tigaie.
+                </p>
+
+            </div>
+        </div>
+
+
+        <li class="cards_item">
+            <div class="card" onclick="openModal(event, 'modal3')">
+                <div class="card_image">
+                    <img src="img/f3.png"/>
+                    <span class="card_price"><span>lei</span>75</span>
+                </div>
+                <div class="card_content">
+                    <h2 class="card_title">Margherita Pizza</h2>
+                    <div class="card_text">
+                        <p>Margherita Pizza este o pizza simplă, tradițională din bucătăria italiană, cunoscută pentru
+                            aromele sale clasice și pentru simplitatea ingredientelor. Aceasta constă în principal din
+                            sos de roșii, mozzarella proaspătă, frunze proaspete de busuioc și ulei de măsline.
+                        </p>
+                        <hr/>
+                        <p><strong>550gr</strong> <strong> 500kcal</strong></p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <!-- Fereastra modală corespunzătoare pentru cardul 3 -->
+        <div id="modal3" class="modal hide" onclick="closeModal(event, 'modal3')">
+            <div class="modal-content" onclick="event.stopPropagation();">
+                <span class="close-btn" onclick="closeModal('modal3')">&times;</span>
+                <img src="img/f3.png" alt="mixed vegetable salad in a mason jar."/>
+                <h2>Detalii Margherita Pizza</h2>
+                <p>Margherita Pizza este o pizza simplă, tradițională din bucătăria italiană, cunoscută pentru
+                    aromele sale clasice și pentru simplitatea ingredientelor. Aceasta constă în principal din
+                    sos de roșii, mozzarella proaspătă, frunze proaspete de busuioc și ulei de măsline.
+                </p>
+
+            </div>
+        </div>
+        <!-- Cardul 4 cu fereastra modala -->
+        <li class="cards_item">
+            <div class="card" onclick="openModal(event, 'modal4')">
+                <div class="card_image">
+                    <img src="img/f4.png" alt="mixed vegetable salad in a mason jar."/>
+                    <span class="card_price"><span>lei</span>85</span>
+                </div>
+                <div class="card_content">
+                    <h2 class="card_title">Pasta cu legume</h2>
+                    <div class="card_text">
+                        <p>Pasta cu legume aceasta poate fi pregătită în diverse moduri,
+                            folosind o gamă largă de legume, cum ar fi dovlecei, roșii, ardei, ciuperci, spanac,
+                            broccoli sau orice alte legume preferate.
+                        </p>
+                        <hr/>
+                        <p><strong>250gr</strong> <strong> 330kcal</strong></p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <!-- Fereastra modală corespunzătoare pentru cardul 4 -->
+        <div id="modal4" class="modal hide" onclick="closeModal( 'modal4')">
+            <div class="modal-content" onclick="event.stopPropagation();">
+                <span class="close-btn" onclick="closeModal('modal4')">&times;</span>
+                <img src="img/f4.png" alt="mixed vegetable salad in a mason jar."/>
+                <h2>Detalii Pasta cu legume</h2>
+                <p>Pasta cu legume aceasta poate fi pregătită în diverse moduri,
+                    folosind o gamă largă de legume, cum ar fi dovlecei, roșii, ardei, ciuperci, spanac,
+                    broccoli sau orice alte legume preferate.
+                </p>
+
+            </div>
+        </div>
+
+        <!-- Cardul 5 cu fereastra modala -->
+        <li class="cards_item">
+            <div class="card" onclick="openModal(event, 'modal5')">
+                <div class="card_image">
+                    <img src="img/f5.png" alt="mixed vegetable salad in a mason jar."/>
+                    <span class="card_price"><span>lei</span>55</span>
+                </div>
+                <div class="card_content">
+                    <h2 class="card_title">Cartofi</h2>
+                    <div class="card_text">
+                        <p>Cartofii pai reprezintă o mâncare populară și delicioasă, constând în cartofi tăiați subțire
+                            și prăjiți până devin crocanți. Acești cartofi tăiați subțire pot fi condimentați cu sare,
+                            piper sau alte condimente pentru a adăuga un gust savuros.
+                        </p>
+                        <hr/>
+                        <p><strong>150gr</strong> <strong> 250kcal</strong></p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <!-- Fereastra modală corespunzătoare pentru cardul 5 -->
+        <div id="modal5" class="modal hide" onclick="closeModal( 'modal5')">
+            <div class="modal-content" onclick="event.stopPropagation();">
+                <span class="close-btn" onclick="closeModal( 'modal5')">&times;</span>
+                <img src="img/f5.png" alt="mixed vegetable salad in a mason jar."/>
+                <h2>Detalii Cartofi</h2>
+                <p>Cartofii pai reprezintă o mâncare populară și delicioasă, constând în cartofi tăiați subțire
+                    și prăjiți până devin crocanți. Acești cartofi tăiați subțire pot fi condimentați cu sare,
+                    piper sau alte condimente pentru a adăuga un gust savuros.
+                </p>
+
+            </div>
+        </div>
+
+        <!-- Cardul 6 cu fereastra modala -->
+        <li class="cards_item">
+            <div class="card" onclick="openModal(event, 'modal6')">
+                <div class="card_image">
+                    <img src="img/f6.png" alt="mixed vegetable salad in a mason jar."/>
+                    <span class="card_price"><span>lei</span>80</span>
+                </div>
+                <div class="card_content">
+                    <h2 class="card_title">4 in 1 Pizza</h2>
+                    <div class="card_text">
+                        <p>4 în 1 Pizza aceste ingrediente pot varia, dar pot include combinații precum
+                            pepperoni, ciuperci, ardei, șuncă, ceapă, măsline, bacon, salam, roșii, sau orice alte
+                            ingrediente preferate de clienți sau de producătorul de pizza.
+                        </p>
+                        <hr/>
+                        <p><strong>450gr</strong> <strong> 550kcal</strong></p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <!-- Fereastra modală corespunzătoare pentru cardul 6 -->
+        <div id="modal6" class="modal hide" onclick="closeModal('modal6')">
+            <div class="modal-content" onclick="event.stopPropagation();">
+                <span class="close-btn" onclick="closeModal( 'modal6')">&times;</span>
+                <img src="img/f6.png" alt="mixed vegetable salad in a mason jar."/>
+                <h2>Detalii 4 in 1 Pizza</h2>
+                <p>4 în 1 Pizza aceste ingrediente pot varia, dar pot include combinații precum
+                    pepperoni, ciuperci, ardei, șuncă, ceapă, măsline, bacon, salam, roșii, sau orice alte
+                    ingrediente preferate de clienți sau de producătorul de pizza.
+                </p>
+
+            </div>
+        </div>
+
+        <!-- Cardul 7 cu fereastra modala -->
+        <li class="cards_item">
+            <div class="card" onclick="openModal(event, 'modal7')">
+                <div class="card_image">
+                    <img src="img/f7.png" alt="mixed vegetable salad in a mason jar."/>
+                    <span class="card_price"><span>lei</span>99</span>
+                </div>
+                <div class="card_content">
+                    <h2 class="card_title">Chicken Burger</h2>
+                    <div class="card_text">
+                        <p>Chicken Burger este o gustare sau o masă principală care constă într-un burger făcut cu un
+                            chiftelet de carne de pui. Aceasta este o alternativă populară la burgerul tradițional de
+                            carne de vită și este apreciată pentru textura sa moale și gustul său savuros.
+                        </p>
+                        <hr/>
+                        <p><strong>350gr</strong> <strong> 450kcal</strong></p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <!-- Fereastra modală corespunzătoare pentru cardul 7 -->
+        <div id="modal7" class="modal hide" onclick="closeModal( 'modal7')">
+            <div class="modal-content" onclick="event.stopPropagation();">
+                <span class="close-btn" onclick="closeModal( 'modal7')">&times;</span>
+                <img src="img/f7.png" alt="mixed vegetable salad in a mason jar."/>
+                <h2>Detalii Chicken Burger</h2>
+                <p>Chicken Burger este o gustare sau o masă principală care constă într-un burger făcut cu un
+                    chiftelet de carne de pui. Aceasta este o alternativă populară la burgerul tradițional de
+                    carne de vită și este apreciată pentru textura sa moale și gustul său savuros.
+                </p>
+
+            </div>
+        </div>
+
+
+        <!-- Cardul 8 cu fereastra modala -->
+        <li class="cards_item">
+            <div class="card" onclick="openModal(event, 'modal8')">
+                <div class="card_image">
+                    <img src="img/f8.png" alt="mixed vegetable salad in a mason jar."/>
+                    <span class="card_price"><span>lei</span>68</span>
+                </div>
+                <div class="card_content">
+                    <h2 class="card_title">Tasty Burger</h2>
+                    <div class="card_text">
+                        <p>"Tasty Burger" este o expresie în limba engleză care se traduce în română ca "burger
+                            delicios" sau "burger gustos". Este posibil să fie folosită pentru a descrie orice burger
+                            care este considerat a fi foarte plăcut din punct de vedere gustativ.
+                        </p>
+                        <hr/>
+                        <p><strong>400gr</strong> <strong> 450kcal</strong></p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <!-- Fereastra modală corespunzătoare pentru cardul 8 -->
+        <div id="modal8" class="modal hide" onclick="closeModal( 'modal8')">
+            <div class="modal-content" onclick="event.stopPropagation();">
+                <span class="close-btn" onclick="closeModal( 'modal8')">&times;</span>
+                <img src="img/f8.png" alt="mixed vegetable salad in a mason jar."/>
+                <h2>Detalii Tasty Burger</h2>
+                <p>"Tasty Burger" este o expresie în limba engleză care se traduce în română ca "burger
+                    delicios" sau "burger gustos". Este posibil să fie folosită pentru a descrie orice burger
+                    care este considerat a fi foarte plăcut din punct de vedere gustativ.
+                </p>
+
+            </div>
+        </div>
+
+
+        <!-- Cardul 9 cu fereastra modala -->
+        <li class="cards_item">
+            <div class="card" onclick="openModal(event, 'modal9')">
+                <div class="card_image">
+                    <span class="note">Nou</span>
+                    <img src="img/f9.png" alt="mixed vegetable salad in a mason jar."/>
+                    <span class="card_price"><span>lei</span>70</span>
+                </div>
+                <div class="card_content">
+                    <h2 class="card_title">Pasta Parmezan</h2>
+                    <div class="card_text">
+                        <p>Pasta Parmesan, sau "paste cu parmezan", este un preparat culinar care implică gătitul
+                            pastelor și așternerea unui strat generos de parmezan ras deasupra. Este un fel de mâncare
+                            simplu, dar delicios, în care sosul de paste poate fi preparat în diverse moduri,
+                        </p>
+                        <hr/>
+                        <p><strong>250gr</strong> <strong> 450kcal</strong></p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <!-- Fereastra modală corespunzătoare pentru cardul 9 -->
+        <div id="modal9" class="modal hide" onclick="closeModal( 'modal9')">
+            <div class="modal-content" onclick="event.stopPropagation();">
+                <span class="close-btn" onclick="closeModal( 'modal9')">&times;</span>
+                <img src="img/f9.png" alt="mixed vegetable salad in a mason jar."/>
+                <h2>Detalii Pasta Parmezan</h2>
+                <p>Pasta Parmesan, sau "paste cu parmezan", este un preparat culinar care implică gătitul
+                    pastelor și așternerea unui strat generos de parmezan ras deasupra. Este un fel de mâncare
+                    simplu, dar delicios, în care sosul de paste poate fi preparat în diverse moduri.
+                </p>
+
+            </div>
+        </div>
+
+    </ul>
+</div>
+
+<!-- Footer -->
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <h6>About</h6>
+                <p class="text-justify">Fiecare burger de pe meniul nostru este rezultatul unei călătorii gastronomice
+                    pline de pasiune și inovație. Echipa noastră dedicată depune eforturi considerabile pentru a crea o
+                    experiență culinară memorabilă pentru fiecare client.</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <h6>Quick Links</h6>
+                <ul class="footer-links">
+                    <li><a href="index.html">Acasa</a></li>
+                    <li><a href="rezervare.html">Contacte</a></li>
+      
+                </ul>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+                <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
+                    <a href="#">BurgerMania</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="menu.js"></script>
+</body>
+</html>
+
+
+

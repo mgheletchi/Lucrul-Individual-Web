@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BurgerMania</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+    <section class="navbar">
+        <div class="logo"><a href="index.html">BurgerMania</a></div>
+        <div class="burger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Acasa</a></li>
+            <li><a href="meniu.html">Meniu</a></li>
+            <li><a href="rezervare.html">Rezervarea</a></li>
+        </ul>
+    </section>
+</nav>
+
+<!-- Aside Section -->
+<aside>
+    <h3>Program de lucru</h3>
+    <table>
+        <thead>
+            <tr>
+                <th scope="row">Ziua</th>
+                <th colspan="2">Ora/Pauza</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row">Luni - Vineri</td>
+                <td>09:00 AM - 10:00 PM</td>
+                <td>12:00 PM - 13:00 PM</td>
+            </tr>
+            <tr>
+                <td>Sâmbătă - Duminică</td>
+                <td>10:00 AM - 9:00 PM</td>
+                <td>13:00 PM - 14:00 PM</td>
+            </tr>
+        </tbody>
+    </table>
+    <ol>
+        <li>Livrare curier</li>
+        <li>Servire în local</li>
+    </ol>
+</aside>
+
+<!-- Main Form Section -->
+<div class="container__main">
+    <div class="container2">
+        <div class="form-container">
+            <div class="left-container">
+                <div class="left-inner-container">
+                    <iframe width="400" height="600"
+                            id="gmap_canvas"
+                            src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=stefan%20cel%20mare%20%20Chisinau+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                    <a href='https://maps-generator.com/'>Maps Generator</a>
+                </div>
+            </div>
+            <div class="right-container">
+                <div class="right-inner-container">
+                    <form onsubmit="return validateForm()">
+                        <h2 class="lg-view">Contactează-ne</h2>
+                        <h2 class="sm-view">022 321 321</h2>
+                        <input type="text" id="nume" placeholder="Numele" />
+                        <input type="tel" id="telefon" placeholder="Telefon" />
+                        <textarea rows="4" id="mesaj" placeholder="Mesajul"></textarea>
+                        <button>Contacteaza-ne</button>
+                    </form>
+                    <div class="error-message" id="error-message"></div>
+                    <!-- Pop-up pentru trimitere cu succes -->
+                    <div id="success-popup"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <h6>About</h6>
+                <p class="text-justify">Fiecare burger de pe meniul nostru este rezultatul unei călătorii gastronomice
+                    pline de pasiune și inovație. Echipa noastră dedicată depune eforturi considerabile pentru a crea o
+                    experiență culinară memorabilă pentru fiecare client.</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <h6>Quick Links</h6>
+                <ul class="footer-links">
+                    <li><a href="index.html">Acasa</a></li>
+                    <li><a href="rezervare.html">Contacte</a></li>
+                    <!-- Add your quick links here -->
+                </ul>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+                <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
+                    <a href="#">BurgerMania</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="menu.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
